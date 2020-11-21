@@ -1,3 +1,7 @@
+*{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
     background-image: url(images/background.png);
     margin: 0;
@@ -21,12 +25,47 @@ h1{
 }
 .coloum1{
     background-color: #EEEEEE;
+    width: 75%;
+    
+}
+
+.critics{
+    position: relative;
+    margin: auto;
+    font-size: 13pt;
+    font-weight: bold;
+    width: 90%;
+    padding: 1em 2em 1em 0em;
+
+}
+.publication{
+    font-style: italic;
 }
 .coloum2{
     background-color: #A2B964;
+    width: 25%;
+    padding: 15px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-bottom: 15px;
+}
+dl{
+    padding: 15px;
+}
+.lav{
+    width: 100%;
+    
 }
 footer{
     background-color: #A2B964;
+    padding: 0.5em 0;
     position: relative;
     margin: 0px auto;
     width: 55%;
@@ -35,17 +74,21 @@ footer{
 }
 .s92{
     color: red;
-    font-size: 83px;
+    font-size: 48pt;
     font-weight: bold;
     display: inline-block;
-    
+    position: relative;
+    top: -17px;
 }
 .zelena-slika{
     background-image: url(images/rbg.png);
     height: 83px;
     margin-bottom: 1rem;
 }
+
 .quotebubble{
+    position: relative;
+    margin: auto;
     border: 2px solid #CCCCCC ;
     padding: 1em;
     border-radius: 12px;
@@ -56,6 +99,12 @@ footer{
 }
 .image{
     margin-right: 5px;
+    float: left;      
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 #w3c{
     position: relative;
