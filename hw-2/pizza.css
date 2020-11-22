@@ -1,0 +1,71 @@
+.navbar{
+    background-color: red;
+}
+#header-color{
+    color: white;
+    font-weight: bold;
+}
+#header-color:hover{
+    color: lightgoldenrodyellow;
+}
+#list-in-nav{
+    color: white;
+    font-weight: bold;
+}
+#list-in-nav:hover{
+    color: lightgoldenrodyellow;
+}
+.box-one{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaSir.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
+.box-two{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaRukola.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
+.box-three{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaEgg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
+.box-four{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaVegan.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
+.box-five{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaTuna.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
+.box-six{
+    width: 300px;
+    height: 300px;
+    background-image: url(images/pizzaCapriccosia.jpg);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 20px 35px;
+}
