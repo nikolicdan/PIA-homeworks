@@ -15,7 +15,27 @@
 #list-in-nav:hover{
     color: lightgoldenrodyellow;
 }
-.box-one{
+
+.facebook{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/facebook.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}    
+.instagram{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/instagram.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+h2{
+    color: red;
+}
+#box-one{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaSir.jpg);
@@ -23,8 +43,9 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
 }
-.box-two{
+#box-two{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaRukola.jpg);
@@ -32,8 +53,9 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
 }
-.box-three{
+#box-three{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaEgg.jpg);
@@ -41,8 +63,9 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
 }
-.box-four{
+#box-four{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaVegan.jpg);
@@ -50,8 +73,9 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
 }
-.box-five{
+#box-five{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaTuna.jpg);
@@ -59,8 +83,9 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
 }
-.box-six{
+#box-six{
     width: 300px;
     height: 300px;
     background-image: url(images/pizzaCapriccosia.jpg);
@@ -68,4 +93,15 @@
     background-position: center;
     display: inline-block;
     margin: 20px 35px;
+    border: none;
+}
+.sastojci{
+    font-weight: bold;
+}
+.dugme{
+    color: blue;
+}
+.dugme:hover{
+    text-decoration: none;
+    color: blue;
 }
