@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="pizza.css">
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#" id="header-color">MyPizza</a>
@@ -21,22 +21,270 @@
                     <li><a id="list-in-nav" href="#meni">Meni</a></li>
                     <li><a id="list-in-nav" href="#kontakt">Kontakt</a></li>
                 </ul>
+                
             </div>
         </nav>
         <div class="container">
             <a name="meni"></a>
+            <br><br><br>
             <h2>Meni</h2>
-           <div class="box-one"></div>
-           <div class="box-two"></div>
-           <div class="box-three"></div>
-           <div class="box-four"></div>
-           <div class="box-five"></div>
-           <div class="box-six"></div>
-            <a name="onama"></a>
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal1" id="box-one"></div>
+           <div class="modal fade" id="Modal1">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pizza sa Sirom</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>pizza sos</li>
+                                <li>mocarela sir</li>
+                                <li>parmezan</li>
+                                <li>čajna kobasica</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 220din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm">   
+                            <p>Cena: 470din</p>                         
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 700din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal2" id="box-two"></div>
+           <div class="modal fade" id="Modal2">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pizza sa Rukolom</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>rukola</li>
+                                <li>trapist sir</li>
+                                <li>pečurke</li>
+                                <li>paradajz</li>
+                                <li>šunka</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 170din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm">   
+                            <p>Cena: 450din</p>                         
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 670din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal3" id="box-three"></div>
+            <div class="modal fade" id="Modal3">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pizza sa Jajima</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>pizza sos</li>
+                                <li>trapist sir</li>
+                                <li>kečap</li>
+                                <li>šunka</li>
+                                <li>jaja</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 270din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm">  
+                            <p>Cena: 560din</p>                          
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 840din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal4" id="box-four"></div>
+            <div class="modal fade" id="Modal4">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Veganska Pizza</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>paradajz</li>
+                                <li>tofu sir</li>
+                                <li>šargarepa</li>
+                                <li>paprika</li>
+                                <li>tikvice</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 210din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm"> 
+                            <p>Cena: 450din</p>                           
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 690din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal5" id="box-five"></div>
+            <div class="modal fade" id="Modal5">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pizza sa Tunjevinom</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>paradajz pire</li>
+                                <li>gauda sir</li>
+                                <li>masline</li>
+                                <li>krastavac</li>
+                                <li>tunjevina</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 230din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm"> 
+                            <p>Cena: 500din</p>                           
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 600din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           <div type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal6" id="box-six"></div>
+            <div class="modal fade" id="Modal6">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Capriccosia</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="sastojci">Sastojci:</p>
+                            <ul>
+                                <li>pizza sos</li>
+                                <li>mocarela sir</li>
+                                <li>šampinjoni</li>
+                                <li>šunka</li>
+                            </ul>                            
+                            <label>25cm</label>
+                            <input type="radio" name="velicina" value="25cm">
+                            <p>Cena: 160din</p>
+                            <br>
+                            <label>33cm</label>
+                            <input type="radio" name="velicina" value="33cm">   
+                            <p>Cena: 440din</p>                         
+                            <br>
+                            <label>44cm</label>
+                            <input type="radio" name="velicina" value="44cm">
+                            <p>Cena: 660din</p>
+                            <br>
+                            <label>Kolicina:</label>
+                            <input type="text" name="kolicina" >
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><a class="dugme" href="#">Naruci</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+           <a name="onama"></a>
             <h2>O nama</h2>
             <a name="kontakt"></a>
             <h2>Kontakt</h2>
             
         </div>
+        <footer>
+            <div class="ikonice">
+                <a href="#">
+                    <div class="facebook">
+                    </div>
+                </a>
+                <a href="#">
+                <div class="instagram">
+                </div>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
