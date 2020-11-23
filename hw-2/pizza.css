@@ -1,5 +1,12 @@
+body{
+    background-image: url(images/pozadina.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
 .navbar{
-    background-color: red;
+    background-color: #b30000;
+    border: none;
 }
 #header-color{
     color: white;
@@ -15,7 +22,10 @@
 #list-in-nav:hover{
     color: lightgoldenrodyellow;
 }
-
+.tekst{
+    color: white;
+    font-size: 13pt;
+}
 .facebook{
     width: 30px;
     height: 30px;
@@ -33,11 +43,11 @@
     display: inline-block;
 }
 h2{
-    color: red;
+    color: white;
 }
 #box-one{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaSir.jpg);
     background-size: cover;
     background-position: center;
@@ -45,9 +55,12 @@ h2{
     margin: 20px 35px;
     border: none;
 }
+#box-one:hover, #box-two:hover, #box-three:hover, #box-four:hover, #box-five:hover, #box-six:hover{
+    opacity: 0.8;
+}
 #box-two{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaRukola.jpg);
     background-size: cover;
     background-position: center;
@@ -56,8 +69,8 @@ h2{
     border: none;
 }
 #box-three{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaEgg.jpg);
     background-size: cover;
     background-position: center;
@@ -66,8 +79,8 @@ h2{
     border: none;
 }
 #box-four{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaVegan.jpg);
     background-size: cover;
     background-position: center;
@@ -76,8 +89,8 @@ h2{
     border: none;
 }
 #box-five{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaTuna.jpg);
     background-size: cover;
     background-position: center;
@@ -86,8 +99,8 @@ h2{
     border: none;
 }
 #box-six{
-    width: 300px;
-    height: 300px;
+    width: 20vw;
+    height: 20vw;
     background-image: url(images/pizzaCapriccosia.jpg);
     background-size: cover;
     background-position: center;
@@ -98,10 +111,26 @@ h2{
 .sastojci{
     font-weight: bold;
 }
+.kontakti{
+    color: white;
+}
+span{
+    color: white;
+}
+label{
+    color: white;
+}
+#posalji{
+    color: #b30000;
+}
 .dugme{
     color: blue;
 }
 .dugme:hover{
     text-decoration: none;
     color: blue;
+}
+.velicina{
+    display: inline-block;
+    font-weight: bold;
 }
