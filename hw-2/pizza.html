@@ -11,19 +11,37 @@
         <link rel="stylesheet" type="text/css" href="pizza.css">
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="#" id="header-color">MyPizza</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a id="list-in-nav" href="#onama">O nama</a></li>
-                    <li><a id="list-in-nav" href="#meni">Meni</a></li>
-                    <li><a id="list-in-nav" href="#kontakt">Kontakt</a></li>
-                </ul>
-                
+
+                <div class="collapse navbar-collapse" id="nav1">
+                    <ul class="nav navbar-nav ">
+
+                        <li class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a id="list-in-nav" href="#onama">O nama</a></li>
+                                <li><a id="list-in-nav" href="#meni"> Meni</a></li>
+                                <li><a id="list-in-nav" href="#kontakt">Kontakt</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a id="list-in-nav" href="#onama">O nama</a></li>
+                        <li><a id="list-in-nav" href="#meni">Meni</a></li>
+                        <li><a id="list-in-nav" href="#kontakt">Kontakt</a></li>
+                    </ul>
+                    
+                </div>
             </div>
-        </nav>
+        </nav>        
         <div class="container">
             <a name="meni"></a>
             <br><br><br>
@@ -45,15 +63,15 @@
                                 <li>parmezan</li>
                                 <li>čajna kobasica</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 220din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm">   
                             <p>Cena: 470din</p>                         
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 700din</p>
                             <br>
@@ -87,15 +105,15 @@
                                 <li>paradajz</li>
                                 <li>šunka</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 170din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm">   
                             <p>Cena: 450din</p>                         
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 670din</p>
                             <br>
@@ -127,15 +145,15 @@
                                 <li>šunka</li>
                                 <li>jaja</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 270din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm">  
                             <p>Cena: 560din</p>                          
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 840din</p>
                             <br>
@@ -167,15 +185,15 @@
                                 <li>paprika</li>
                                 <li>tikvice</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 210din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm"> 
                             <p>Cena: 450din</p>                           
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 690din</p>
                             <br>
@@ -207,15 +225,15 @@
                                 <li>krastavac</li>
                                 <li>tunjevina</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 230din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm"> 
                             <p>Cena: 500din</p>                           
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 600din</p>
                             <br>
@@ -246,15 +264,15 @@
                                 <li>šampinjoni</li>
                                 <li>šunka</li>
                             </ul>                            
-                            <label>25cm</label>
+                            <p class="velicina">25cm</p>
                             <input type="radio" name="velicina" value="25cm">
                             <p>Cena: 160din</p>
                             <br>
-                            <label>33cm</label>
+                            <p class="velicina">33cm</p>
                             <input type="radio" name="velicina" value="33cm">   
                             <p>Cena: 440din</p>                         
                             <br>
-                            <label>44cm</label>
+                            <p class="velicina">44cm</p>
                             <input type="radio" name="velicina" value="44cm">
                             <p>Cena: 660din</p>
                             <br>
@@ -268,11 +286,62 @@
 
                 </div>
             </div> 
-           <a name="onama"></a>
+            <a name="onama"></a>
             <h2>O nama</h2>
+            <p class="tekst">
+                Vec 20 godina se sa vama druzimo, menjajuci lokacije, objekte, 
+                trudimo se da na najbolji nacin zadovoljimo vasa ocekivanja.
+                Nas objekat se nalazi u blizini centra garda i ima oko 100 mesta za sedenje. 
+                Takodje, nas restoran poseduje i bastu, koju leti narocito preporucujemo. 
+                Ne pravimo razliku izmedju dana i noci, pa s toga nasu hranu mozete imati kada god pozelite, 
+                jer vrsimo kucnu isporuku. Dostava je besplatna. 
+                Pored toga sto smo poznati po raznovrsnim picama, 
+                na meniju se moze naci i veliki izbor sendvica, palacinki, salate, razna pica, kokteli itd. 
+                Ostaje vam samo da dodjete i uverite se! Ocekujemo vas.
+            </p>
+            
             <a name="kontakt"></a>
             <h2>Kontakt</h2>
-            
+            <div class="container contact">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="contact-info">
+                            <a href="https://goo.gl/maps/qQ8jqZuoFm7L2Wk5A" target="_blank"><p class="kontakti"><span class="glyphicon glyphicon-map-marker"></span></a>Miloja Pavlovića 10, Kragujevac</p>
+                            <p class="kontakti"><span class="glyphicon glyphicon-phone"></span>066/1122000</p>
+                            <p class="kontakti"><span class="glyphicon glyphicon-envelope"></span> mypizza@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="contact-form">
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="fname"><b>Ime:</b> </label>
+                              <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="fname" placeholder="Ime" name="fname">
+                              </div>
+                            </div>
+                            <br><br><br>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="lname"><b>Prezime:</b></label>
+                              <div class="col-sm-10">          
+                                <input type="text" class="form-control" id="lname" placeholder="Prezime" name="lname">
+                              </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="comment"><b>Komentar:</b></label>
+                              <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                            </div>
+                            <div class="form-group">        
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default" id="posalji">Pošalji</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="ikonice">
