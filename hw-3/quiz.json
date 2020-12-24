@@ -1,13 +1,63 @@
-{
-    
-    "prvo":"Koje godine je napisan drugi Vukov rečnik?",
-    "drugo":"Ko je napisao roman Robinson Kruso?",
-    "trece":"Monika Beluči je rodjena?",
-    "cetvrto":"Zbog kojih plodova se uzgaja datula?",
-    "peto":"Entomofobija je strah od?",
-    "sesto":"Nutovanje radi?",
-    "sedmo":"Britanska rokerka Lenoks zove se?",
-    "osmo":"Koliko iznosi kosinus od ugla od 90 stepeni?",
-    "deveto":"Koja ekipa je osvajač košarkaške evrolige za sezonu 2012/13?",
-    "deseto":"Koju titulu nosi jedina osoba koja je u tibetanskom budizmu iznad pančen lame?"
-}
+[
+    {       
+        "q":"Koje godine je napisan drugi Vukov rečnik?",
+        "a1q":"1818.",
+        "a2q":"1852.",
+        "a3q":"1952.",
+        "a4q":"1847.",
+        "correct":2
+    },
+    {
+        "q":"Ko je napisao roman Robinson Kruso?",
+        "aq":"danijel defo"
+    },
+    {
+        "q":"Monika Beluči je rodjena?",
+        "a1q":"1976.",
+        "a2q":"1972.",
+        "a3q":"1968.",
+        "a4q":"1964.",
+        "correct":4
+    },
+    {
+        "q":"Zbog kojih plodova se uzgaja datula?",
+        "aq":"urme"
+    },
+    {
+        "q":"Entomofobija je strah od?",
+        "a1q":"Crkava",
+        "a2q":"Knjiga",
+        "a3q":"Insekata",
+        "a4q":"Rada",
+        "correct":3
+    },
+    {
+        "q":"Nutovanje radi?",
+        "aq":"stolar"
+    },
+    {
+        "q":"Britanska rokerka Lenoks zove se?",
+        "a1q":"Leni",
+        "a2q":"Eni",
+        "a3q":"Tina",
+        "a4q":"Dženi",
+        "correct":2
+    },
+    {
+        "q":"Koliko iznosi kosinus od ugla od 90 stepeni?",
+        "aq":"0"
+    },
+    {
+        "q":"Koja ekipa je osvajač košarkaške evrolige za sezonu 2012/13?",
+        "a1q":"Barselona",
+        "a2q":"CSKA",
+        "a3q":"Olimpiakos",
+        "a4q":"Real MAdrid",
+        "correct":3
+    },
+    {
+        "q":"Koju titulu nosi jedina osoba koja je u tibetanskom budizmu iznad pančen lame?",
+        "aq":"dalai lama"
+    }
+
+]
