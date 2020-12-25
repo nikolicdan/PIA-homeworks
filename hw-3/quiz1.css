@@ -6,6 +6,7 @@
     --hue-neutral:200;
     --hue-wrong:0;
     --hue-correct:145;
+    --hue-true:58;
 }
 body{
     --hue: var(--hue-neutral);
@@ -23,6 +24,9 @@ body.correct{
 }
 body.wrong{
     --hue: var(--hue-wrong);
+}
+body.true{
+    --hue: var(--hue-true);
 }
 .container{
     width: 800px;
@@ -54,12 +58,7 @@ body.wrong{
 .btn:hover{
     border-color: black;
 }
-.btn.correct{
-    --hue:var(--hue-correct);
-}
-.btn.correct{
-    --hue:var(--hue-wrong);
-}
+
 .start-btn, .next-btn{
     font-size: 1.5rem;
     font-weight: bold;

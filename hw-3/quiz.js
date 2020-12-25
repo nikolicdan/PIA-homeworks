@@ -16,6 +16,9 @@ document.getElementById('answer4').onclick=function() {
 document.getElementById('confirm').onclick=function() {
     correct1(document.getElementById("answer").value.toLowerCase())
 }
+document.getElementById('next').onclick=function() {
+    correct1(5)
+}
 fetch("quiz.json")
     .then(response => response.json())
     .then(data1 =>{data=data1})
@@ -55,42 +58,61 @@ function startGame() {
     makeQuestionAndAnswer() 
 } 
 function correct1(e){
-    if(i%2==1){
-        if(e==data[i-1].correct){
-            document.body.classList.add('correct')
-            setTimeout(makeQuestionAndAnswer,3000)
+    if(e==5){
+        document.body.classList.add('true')
+        if(data[i-1].correct==1){
+            document.getElementById('answer1').classList.add('true')
+        }
+        else if(data[i-1].correct==2){
+            document.getElementById('answer2').classList.add('true')
+        }
+        else if(data[i-1].correct==3){
+            document.getElementById('answer3').classList.add('true')
         }
         else{
-            document.body.classList.add('wrong')
-            if(data[i-1].correct==1){
-                document.getElementById('answer1').classList.add('true')
-            }
-            else if(data[i-1].correct==2){
-                document.getElementById('answer2').classList.add('true')
-            }
-            else if(data[i-1].correct==3){
-                document.getElementById('answer3').classList.add('true')
-            }
-            else{
-                document.getElementById('answer4').classList.add('true')
-            }
-            setTimeout(makeQuestionAndAnswer,3000)
+            document.getElementById('answer4').classList.add('true')
         }
+        setTimeout(makeQuestionAndAnswer,3000)
     }
     else{
-        if(data[i-1].aq==e){
-            document.body.classList.add('correct')
-            setTimeout(makeQuestionAndAnswer,3000)
+        if(i%2==1){
+            if(e==data[i-1].correct){
+                document.body.classList.add('correct')
+                setTimeout(makeQuestionAndAnswer,3000)
+            }
+            else{
+                document.body.classList.add('wrong')
+                if(data[i-1].correct==1){
+                    document.getElementById('answer1').classList.add('true')
+                }
+                else if(data[i-1].correct==2){
+                    document.getElementById('answer2').classList.add('true')
+                }
+                else if(data[i-1].correct==3){
+                    document.getElementById('answer3').classList.add('true')
+                }
+                else{
+                    document.getElementById('answer4').classList.add('true')
+                }
+                setTimeout(makeQuestionAndAnswer,3000)
+            }
         }
         else{
-            document.body.classList.add('wrong')
-            setTimeout(makeQuestionAndAnswer,3000)
+            if(data[i-1].aq==e){
+                document.body.classList.add('correct')
+                setTimeout(makeQuestionAndAnswer,3000)
+            }
+            else{
+                document.body.classList.add('wrong')
+                setTimeout(makeQuestionAndAnswer,3000)
+            }
         }
     }
 }
 function reset(){
     document.body.classList.remove('correct')
     document.body.classList.remove('wrong')
+    document.body.classList.remove('true')
     document.getElementById('answer1').classList.remove('true')
     document.getElementById('answer2').classList.remove('true')
     document.getElementById('answer3').classList.remove('true')
