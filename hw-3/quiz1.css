@@ -35,11 +35,12 @@ body.true{
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    text-align: center;
 }
 
 .btn-grid{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 10px;
     margin: 20px 0;
 }
@@ -57,18 +58,27 @@ body.true{
 }
 .btn:hover{
     border-color: black;
+    opacity: 0.8;
 }
-
-.start-btn, .next-btn{
+.start-btn{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
 }
+
 .controls{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
     justify-content: center;
     align-items: center;
 }
+
 .hide{
     display: none;
+}
+p, .question{
+    font-size: 18pt;
+}
+h3{
+    text-align: end;
 }

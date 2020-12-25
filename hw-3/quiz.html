@@ -10,24 +10,44 @@
     </head>
     <body>
         <div class="container">
+            <div id="instruction" class="hide">
+                <ul>
+                    <li><p>Kviz sadrži 10 pitanja (ponuđeni odgovori ili unos sa tastature).</p></li>
+                    <li><p>Za svako pitanje korisnik ima 20 sekundi</p></li>
+                    <li><p>Ukoliko istekne vreme, prelazi se na sledeće pitanje. Nije moguće vratiti se na prethodno pitanje.</p></li>
+                    <li><p>Na kraju se pojavljuje konačan rezultat.</p></li>
+                </ul>
+            </div>
             <div id="question-container" class="hide">
-                <div id="question">Question</div>
+                <h3>Vreme: <span id="time-left">20</span></h3>
+                <div id="questions"><p id="question">Question</p></div>
                 <div id="answer-buttons" class="btn-grid">
                     <button class="btn" id="answer1">Answer 1</button>
                     <button class="btn" id="answer2">Answer 2</button>
                     <button class="btn" id="answer3">Answer 3</button>
                     <button class="btn" id="answer4">Answer 4</button>
 
-                    <input type="text" id="answer" class="hide" placeholder="odgovor">
-                    <br>
+                    <input type="text" id="answer" class="hide" placeholder="odgovor" autocomplete="off">
                     <button class="btn" id="confirm">Potvrdi</button>
+                    <br>
                     <button class="btn" id="next">Dalje</button>
+                    <button class="btn" id="quit">Izlaz</button>
+                    
                 </div>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
+            <div id="score" class="hide">
+                <p>Vaš rezultat je:<b id="score1"></b></p>
             </div>
+            
+            
+            <div class="controls">       
+                <input type="text" id="name" placeholder="Korisničko Ime" autocomplete="off"> 
+                <br>        
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="begin" class="start-btn btn hide">Počni kviz</button>
+                <button id="again" class="start-btn btn hide">Počni ponovo</button>
+            </div>
+            
         </div>
     </body>
 </html>
