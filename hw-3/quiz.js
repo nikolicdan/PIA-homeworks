@@ -127,13 +127,12 @@ function correct1(e){
             if(e==data[i-1].correct){
                 clearInterval(timer)
                 document.body.classList.add('correct')
-                poeni=poeni+10
+                poeni=poeni+1
                 setTimeout(makeQuestionAndAnswer,3000)
             }
             else{
                 clearInterval(timer)
                 document.body.classList.add('wrong')
-                poeni=poeni-5
                 if(data[i-1].correct==1){
                     document.getElementById('answer1').classList.add('true')
                 }
@@ -153,13 +152,12 @@ function correct1(e){
             if(data[i-1].aq==e){
                 clearInterval(timer)
                 document.body.classList.add('correct')
-                poeni=poeni+10
+                poeni=poeni+1
                 setTimeout(makeQuestionAndAnswer,3000)
             }
             else{
                 clearInterval(timer)
                 document.body.classList.add('wrong')
-                poeni=poeni-5
                 setTimeout(makeQuestionAndAnswer,3000)
             }
         }
@@ -186,6 +184,7 @@ function resetGame(){
     document.getElementById('score').classList.add('hide')
 }
 function endGame(){
+    clearInterval(timer)
     question.classList.add('hide')
     document.getElementById('score').classList.remove('hide')
     document.getElementById('again').classList.remove('hide')

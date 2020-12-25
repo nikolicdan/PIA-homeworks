@@ -72,7 +72,9 @@ body.true{
     justify-content: center;
     align-items: center;
 }
-
+tbody{
+    padding: 50px;
+}
 .hide{
     display: none;
 }
