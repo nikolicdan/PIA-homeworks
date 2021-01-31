@@ -6,7 +6,7 @@ $dsn = 'mysql:host=localhost; dbname=mydb';
 
 try {
 
-  $conn = new PDO($dsn, $username, $password);
+  $conn = new PDO($dsn, $username, $password, $name);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch (PDOException $e) {

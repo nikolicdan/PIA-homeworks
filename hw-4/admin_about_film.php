@@ -2,7 +2,7 @@
   if(isset($_POST['search'])) {
     $word=$_POST['input_search'];
 
-    header("location: dashboard.php?src=$word");
+    header("location: admin.php?src=$word");
   }
 ?>
 <?php
@@ -53,7 +53,7 @@
   
 ?>
 <nav class="navbar navbar-expand-md  bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="dashboard.php?all"><h2 style="color: #f1a566;">My Imdb</h2></a>
+    <a class="navbar-brand" href="admin.php?all"><h2 style="color: #f1a566;">My Imdb</h2></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,7 +62,7 @@
         <ul class="navbar-nav ml-auto">
             
             <li>
-                <form class="example" action="dashboard.php" style="margin:auto; padding: 10px 20px 0 0; max-width:1000px" method="post">
+                <form class="example" action="admin.php" style="margin:auto; padding: 10px 20px 0 0; max-width:1000px" method="post">
                     <input type="text" placeholder="Search" name="input_search">
                     <button type="submit" name="search"><i class="fa fa-search" ></i></button>
                 </form>
@@ -102,8 +102,14 @@
                     <div><p> <b> Stars: </b><?php echo  $row['stars'] ?></p></div> </br>
                     <div><p> <b> Production: </b><?php echo $row['production']?></p></div> </br>
                     <div><p> <b> Director: </b><?php echo $row['director']?></p></div> </br>
-                    <div><p> <b> Scenarist: </b><?php echo  $row['scenarist'] ?></div></p></br> 
-                    <div><p> <b> Rating: </b><?php echo  $row['rating'] ?></div></p></br><br>
+                    <div><p> <b> Scenarist: </b><?php echo  $row['scenarist'] ?></div></p></br>
+                    <div><p> <b> Rating: </b><?php echo  $row['rating'] ?></div></p></br> <br>
+                    <a href="deleteFilms.php?title=<?php echo $row['title']?>">
+                        <button type="submit" class="btn btn-danger btn-lg" name="deleteFilms">Delete Film</button> 
+                    </a> 
+                    <a href="editFilms.php?title=<?php echo $row['title']?>">
+                        <button type="submit" class="btn btn-danger btn-lg" name="editFilms">Edit Film</button> 
+                    </a> 
                 </td>
             </tr>
                  

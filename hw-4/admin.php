@@ -8,7 +8,7 @@ include_once 'source/db_connect.php';
   if(isset($_POST['search'])) {
     $word=$_POST['input_search'];
 
-    header("location: dashboard.php?src=$word");
+    header("location: admin.php?src=$word");
   }
 ?>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ include_once 'source/db_connect.php';
 ?>
 
 <nav class="navbar navbar-expand-md  bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="dashboard.php?all"><h2 >My Imdb</h2></a>
+    <a class="navbar-brand" href="admin.php?all"><h2 >My Imdb</h2></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -65,7 +65,7 @@ include_once 'source/db_connect.php';
         <ul class="navbar-nav ml-auto">
             
             <li>
-                <form class="example" action="dashboard.php" method="post">
+                <form class="example" action="admin.php" method="post">
                     <input type="text" placeholder="Search" name="input_search">
                     <button type="submit" name="search"><i class="fa fa-search" ></i></button>
                 </form>
@@ -86,13 +86,22 @@ include_once 'source/db_connect.php';
     <tr><td class="genres"> 
     <div class="col-12" >	  
         <h2>Genres</h2>
-        <a href=dashboard.php?link=Adventure>Adventure</a> <br/>
-        <a href=dashboard.php?link=Action>Action</a> <br/> 	  
-        <a href=dashboard.php?link=Comedy>Comedy</a> <br/> 
-        <a href=dashboard.php?link=Drama>Drama</a> <br/>		
-        <a href=dashboard.php?link=Romance>Romance</a> <br/>
-        <a href=dashboard.php?link=Sci-Fi>Sci-Fi</a> <br/>
-        <a href=dashboard.php?link=Thriller>Thriller</a> <br/>       
+        <a href=admin.php?link=Adventure>Adventure</a> <br/>
+        <a href=admin.php?link=Action>Action</a> <br/> 	  
+        <a href=admin.php?link=Comedy>Comedy</a> <br/> 
+        <a href=admin.php?link=Drama>Drama</a> <br/>		
+        <a href=admin.php?link=Romance>Romance</a> <br/>
+        <a href=admin.php?link=Sci-Fi>Sci-Fi</a> <br/>
+        <a href=admin.php?link=Thriller>Thriller</a> <br/><br/>    
+        <form method="post">
+            <button type="submit" class="btn btn-danger btn-lg" name="addFilms">Add Film</button> 
+        </form> 
+        <?php 
+            if(isset($_POST['addFilms'])) {
+                header('location: addFilms.php');
+            }
+        ?>   
+         
     </div>
   
     </td>
@@ -100,9 +109,9 @@ include_once 'source/db_connect.php';
       <table class="border1"> 
       <?php if($res!=null) { while($row=$res->fetch_assoc()) : ?>
       
-      <tr><td><a href="about_film.php?film=<?php echo $row['title']?>"><img src="<?php echo $row['images']?>"></a></td></tr>
+      <tr><td><a href="admin_about_film.php?film=<?php echo $row['title']?>"><img src="<?php echo $row['images']?>"></a></td></tr>
       <tr><td> &nbsp </td> </tr>
-      <tr><td><a class="title" href="about_film.php?film=<?php echo $row['title']?>"><?php  echo $row['title'] ?> </a></td> </tr>
+      <tr><td><a class="title" href="admin_about_film.php?film=<?php echo $row['title']?>"><?php  echo $row['title'] ?> </a></td> </tr>
       <tr><td> &nbsp </td> </tr> 
       <?php endwhile; } ?>
       </table>

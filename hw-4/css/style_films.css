@@ -33,3 +33,67 @@ img{
     color: black; 
      margin-left:100px !important;
 }
+.addFilm, textarea, #myFile{
+    width: 60%;
+    padding: 8px;
+    border-radius: 4px;
+    resize: vertical;
+    margin:8px 320px !important;
+    background-color: #f1a566 ;
+    color: black !important;
+    box-shadow: none;
+  }
+  input[type=submit]{
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+    margin:8px 20%;
+    float: right;
+    width: 60% ;
+  }
+  #update{
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px;
+    margin:8px 30px;
+    float: right;
+    width: 60% ;
+  }
+  input[type=submit]:hover {
+    opacity: 0.7;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #conMovie{
+      padding: 80px;
+     
+  }
+
+ input[type="file"] {
+    background-color: #333 !important;
+ }
+
+ .container{
+     background-color: #333;
+     padding: 50px 0 !important;
+     border-radius: 20px;
+ }
